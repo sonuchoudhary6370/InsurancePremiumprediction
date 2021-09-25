@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Health Insurance Price Predictor</title>
+<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body >
+ <form action="{{url_for('predict')}}" method ="post">
+  <div class= "heading">
+  <h1>
+    Health Insurance Price Predictor
+  </h1>
+  <h3>
+    An Machine learning App 
+  </h3> 
+   
+
+  </div>
+  <div class="colsL">
+   <label for="age">AGE</label>
+   <input type="text" name="age"  placeholder="Enter age" size="30rem" ><br><br>
+   <label for="bmi">BMI</label>
+   <input type="text" name="bmi" placeholder="Enter your bmi" size="30rem"><br><br>
+
+   <label for="children">CHILDREN </label>
+   <input type="text" name="children" placeholder="Enter Number of children" size="30rem"><br><br>
+
+   <label for="sex_female" >FEMALE</label>
+   <input type="text" name="sex_female" placeholder="Enter 1 for female & 0 for male " size="30rem"><br><br>
+
+   <label for="sex_male">MALE</label>
+   <input type="text" name="sex_male" placeholder="Enter 1 for male & 0 for female " size="30rem"><br><br>
+  </div>
+  <div class="colsR">
+   <label for="smoker_no">NON-SMOKER</label>
+   <input type="text" name="smoker_no" placeholder="Enter 1 for non-Smoker & 0 for smoker " size="30rem"><br><br>
+
+   <label for="smoker_yes">SMOKER</label>
+   <input type="text" name="smoker_yes" placeholder="Enter 1 for Smoker & 0 for non-smoker " size="30rem"><br><br>
+
+
+  <label for="region_northeast">NORTHEAST</label>
+  <input type="text" name="region_northeast" placeholder="Enter 1 for region_northeast & 0 for else " size="30rem"><br><br>
+
+   <label for="region_northwest">NORTHWEST</label>
+   <input type="text" name="region_northwest" placeholder="Enter 1 for region_northwest & 0 for else " size="30rem"><br><br>
+
+   <label for="region_southeast">SOUTHEAST</label>
+   <input type="text" name="region_southeast" placeholder="Enter 1 for region_southeast & 0 for else " size="30rem"><br><br>
+   
+   <label for="region_southwest">SOUTHWEST</label>
+   <input type="text" name="region_southwest" placeholder="Enter 1 for region_southwest & 0 for else " size="30rem"><br><br>   
+  </div>
+  <br><br>
+  <div class="center"> 
+  <button type="submit" class="btn" style="text-align: center; ">PREDICT</button>
+  </div>
+ </form>
+ <br><br><br><br>
+<div class='footer'>
+  <div class="contact">
+    <a target="_blank" href="https://github.com/sonuchoudhary6370"><i class="fab fa-github fa-lg contact-icon"></i></a>
+    <a target="_blank" href="https://www.linkedin.com/in/sonu-choudhary-0683b8179"><i
+        class="fab fa-linkedin fa-lg contact-icon"></i></a>
+  </div>
+  <p class='footer-description'>Created by Sonu Choudhary</p>
+</div>
+</body>
+</html>
